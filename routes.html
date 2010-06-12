@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+
+<h1>{% block title %} {{ title }} {% endblock %}</h1>
+
+{% block body %}
+
+	
+{% for route in routes %}
+	<strong>x</strong> <a href="/whereismybus/route/{{ route.tag }}" accesskey="x">{{ route.title }}</a><br/>
+{% endfor %}
+</p>
+
+{% endblock %}
+

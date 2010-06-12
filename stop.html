@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+<h1>{% block title %} {{ title }} {% endblock %}</h1>
+
+{% block body %}
+<p>
+	<p>
+	<b>
+	stop.title here
+	</b><br/>
+		
+{% for p in stop.predictions %}
+	<strong>x</strong>{{ p.direction.route.title }} {{ p.direction.title  }}  {{ p.seconds }}</a><br/>
+{% endfor %}
+</p>
+
+{% endblock %}
+

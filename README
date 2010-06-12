@@ -1,0 +1,3 @@
+Here is preliminary proof-of-concept code for DC Circulator NextBus based "Where's my bus?" app.
+
+Requires: Google App Engine + NextBus API client (http://github.com/apparentlymart/python-nextbus) license is unclear so probably will be eliminated soon

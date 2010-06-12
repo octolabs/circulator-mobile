@@ -1,0 +1,16 @@
+body {
+	font: 100% Tahoma, Arial, sans-serif;
+}
+
+.section, h1 {
+	display: block;
+	background-color: #c3262d;
+	padding: 5px;
+	color: #FFF;
+	font-size: large;
+	font-weight: bold;
+}
+
+p, li {
+  font-size: small;
+}

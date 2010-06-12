@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+<h1>{% block title %} {{ title }} {% endblock %}</h1>
+
+{% block body %}
+<p>
+	<p>
+	<b>
+	{{ direction.title }}
+	</b><br/>
+		
+{% for s in direction.stops %}
+	<strong>x</strong> <a href="/whereismybus/stop/{{s.stop_id}}" accesskey="x">{{ s.title }}</a><br/>
+{% endfor %}
+</p>
+
+{% endblock %}
+
