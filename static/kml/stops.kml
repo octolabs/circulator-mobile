@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+	<StyleMap id="green_stop">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#green_stop_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#green_stop_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="green_stop_highlight">
+		<IconStyle>
+			<color> ff00ff00</color>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="green_stop_normal">
+		<IconStyle>
+			<color> ff00ff00</color>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		<LabelStyle>
+		<scale>0</scale>
+		</LabelStyle>
+	</Style>
+
+
+	<StyleMap id="green_endpoint">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#green_endpoint_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#green_endpoint_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="green_endpoint_normal">
+		<IconStyle>
+			<color> ff00ff00</color>
+			<scale>1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		  <LabelStyle>
+		    <scale>0</scale>
+		  </LabelStyle>
+	</Style>
+	<Style id="green_endpoint_highlight">
+		<IconStyle>
+			<color> ff00ff00</color>
+			<scale>1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+	
+
+
+	<StyleMap id="yellow_stop">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#yellow_stop_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#yellow_stop_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="yellow_stop_highlight">
+		<IconStyle>
+			<color> ff00ffff</color>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="yellow_stop_normal">
+		<IconStyle>
+			<color> ff00ffff</color>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		<LabelStyle>
+		<scale>0</scale>
+		</LabelStyle>
+	</Style>
+
+
+	<StyleMap id="yellow_endpoint">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#yellow_endpoint_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#yellow_endpoint_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="yellow_endpoint_normal">
+		<IconStyle>
+			<color> ff00ffff</color>
+			<scale>1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		  <LabelStyle>
+		    <scale>0</scale>
+		  </LabelStyle>
+	</Style>
+	<Style id="yellow_endpoint_highlight">
+		<IconStyle>
+			<color> ff00ffff</color>
+			<scale>1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+	
+
+
+	<StyleMap id="blue_stop">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#blue_stop_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#blue_stop_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="blue_stop_highlight">
+		<IconStyle>
+			<color> ffff0000</color>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="blue_stop_normal">
+		<IconStyle>
+			<color> ffff0000</color>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		<LabelStyle>
+		<scale>0</scale>
+		</LabelStyle>
+	</Style>
+
+
+	<StyleMap id="blue_endpoint">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#blue_endpoint_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#blue_endpoint_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="blue_endpoint_normal">
+		<IconStyle>
+			<color> ffff0000</color>
+			<scale>1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		  <LabelStyle>
+		    <scale>0</scale>
+		  </LabelStyle>
+	</Style>
+	<Style id="blue_endpoint_highlight">
+		<IconStyle>
+			<color> ffff0000</color>
+			<scale>1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+	
+
+
+	<StyleMap id="red_stop">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#red_stop_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#red_stop_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="red_stop_highlight">
+		<IconStyle>
+			<color> ff0000ff</color>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="red_stop_normal">
+		<IconStyle>
+			<color> ff0000ff</color>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		<LabelStyle>
+		<scale>0</scale>
+		</LabelStyle>
+	</Style>
+
+
+	<StyleMap id="red_endpoint">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#red_endpoint_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#red_endpoint_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="red_endpoint_normal">
+		<IconStyle>
+			<color> ff0000ff</color>
+			<scale>1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		  <LabelStyle>
+		    <scale>0</scale>
+		  </LabelStyle>
+	</Style>
+	<Style id="red_endpoint_highlight">
+		<IconStyle>
+			<color> ff0000ff</color>
+			<scale>1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+	
+
+
+	<StyleMap id="purple_stop">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#purple_stop_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#purple_stop_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="purple_stop_highlight">
+		<IconStyle>
+			<color> ff800080</color>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="purple_stop_normal">
+		<IconStyle>
+			<color> ff800080</color>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		<LabelStyle>
+		<scale>0</scale>
+		</LabelStyle>
+	</Style>
+
+
+	<StyleMap id="purple_endpoint">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#purple_endpoint_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#purple_endpoint_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="purple_endpoint_normal">
+		<IconStyle>
+			<color> ff800080</color>
+			<scale>1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		  <LabelStyle>
+		    <scale>0</scale>
+		  </LabelStyle>
+	</Style>
+	<Style id="purple_endpoint_highlight">
+		<IconStyle>
+			<color> ff800080</color>
+			<scale>1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+<Folder><name>Green Southbound</name>
+<Placemark><name>24th Street NW And Calvert Street NW</name><description>Green Southbound</description><styleUrl>#green_endpoint</styleUrl><Point><coordinates>-77.05259844,38.92347235,0</coordinates></Point></Placemark>
+Connecticut Avenue NW And Calvert Street NW -77.05151343 38.9235295
+<Placemark><name>Connecticut Avenue NW And Calvert Street NW</name><description>Green Southbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.05151343,38.9235295,0</coordinates></Point></Placemark>
+Calvert Street NW And Lanier Place NW -77.04367089 38.92342967
+<Placemark><name>Calvert Street NW And Lanier Place NW</name><description>Green Southbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.04367089,38.92342967,0</coordinates></Point></Placemark>
+Mount Pleasant Street NW And Irving Street NW -77.0373506 38.92873331
+<Placemark><name>Mount Pleasant Street NW And Irving Street NW</name><description>Green Southbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.0373506,38.92873331,0</coordinates></Point></Placemark>
+Irving Street NW And 14th Street NW -77.03264109 38.92880662
+<Placemark><name>Irving Street NW And 14th Street NW</name><description>Green Southbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.03264109,38.92880662,0</coordinates></Point></Placemark>
+14th Street NW And U Street NW -77.03195074 38.91699779
+<Placemark><name>14th Street NW And U Street NW</name><description>Green Southbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.03195074,38.91699779,0</coordinates></Point></Placemark>
+14th Street NW And P Street NW -77.03195183 38.90964762
+<Placemark><name>14th Street NW And P Street NW</name><description>Green Southbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.03195183,38.90964762,0</coordinates></Point></Placemark>
+K Street And 13th Street NW -77.02962613 38.9025224
+<Placemark><name>K Street And 13th Street NW</name><description>Green Southbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.02962613,38.9025224,0</coordinates></Point></Placemark>
+I Street NW And 14th Street NW -77.03196286 38.90133823
+<Placemark><name>I Street NW And 14th Street NW</name><description>Green Southbound</description><styleUrl>#green_endpoint</styleUrl><Point><coordinates>-77.03196286,38.90133823,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Green Northbound</name>
+<Placemark><name>I Street NW And 14th Street NW</name><description>Green Northbound</description><styleUrl>#green_endpoint</styleUrl><Point><coordinates>-77.03196286,38.90133823,0</coordinates></Point></Placemark>
+14th Street NW And K Street NW -77.03195509 38.90252276
+<Placemark><name>14th Street NW And K Street NW</name><description>Green Northbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.03195509,38.90252276,0</coordinates></Point></Placemark>
+14th Street NW And Rhode Island Avenue NW -77.03194927 38.90883777
+<Placemark><name>14th Street NW And Rhode Island Avenue NW</name><description>Green Northbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.03194927,38.90883777,0</coordinates></Point></Placemark>
+14th Street NW And U Street NW -77.03195074 38.91699779
+<Placemark><name>14th Street NW And U Street NW</name><description>Green Northbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.03195074,38.91699779,0</coordinates></Point></Placemark>
+Columbia Road NW And 14th Street NW -77.03251635 38.92753836
+<Placemark><name>Columbia Road NW And 14th Street NW</name><description>Green Northbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.03251635,38.92753836,0</coordinates></Point></Placemark>
+Columbia Road NW And 16th Street NW -77.03648819 38.92652528
+<Placemark><name>Columbia Road NW And 16th Street NW</name><description>Green Northbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.03648819,38.92652528,0</coordinates></Point></Placemark>
+Columbia Road NW And Adams Mill Road NW -77.04268424 38.92266078
+<Placemark><name>Columbia Road NW And Adams Mill Road NW</name><description>Green Northbound</description><styleUrl>#green_stop</styleUrl><Point><coordinates>-77.04268424,38.92266078,0</coordinates></Point></Placemark>
+24th Street NW And Calvert Street NW -77.05259844 38.92347235
+<Placemark><name>24th Street NW And Calvert Street NW</name><description>Green Northbound</description><styleUrl>#green_endpoint</styleUrl><Point><coordinates>-77.05259844,38.92347235,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Blue Southbound</name>
+<Placemark><name>Union Station Parking Garage Mezzanine Level</name><description>Blue Southbound</description><styleUrl>#blue_endpoint</styleUrl><Point><coordinates>-77.00617913,38.89753847,0</coordinates></Point></Placemark>
+1st Street NE And Maryland Avenue NE (U.S. Capitol) -77.00592451 38.89096903
+<Placemark><name>1st Street NE And Maryland Avenue NE (U.S. Capitol)</name><description>Blue Southbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-77.00592451,38.89096903,0</coordinates></Point></Placemark>
+Independence Avenue SE And 2nd Street SE -77.00351948 38.88761368
+<Placemark><name>Independence Avenue SE And 2nd Street SE</name><description>Blue Southbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-77.00351948,38.88761368,0</coordinates></Point></Placemark>
+Pennsylvania Avenue SE And 8th Street SE -76.99496607 38.88418386
+<Placemark><name>Pennsylvania Avenue SE And 8th Street SE</name><description>Blue Southbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-76.99496607,38.88418386,0</coordinates></Point></Placemark>
+8th Street SE And G Street SE -76.99497491 38.88126805
+<Placemark><name>8th Street SE And G Street SE</name><description>Blue Southbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-76.99497491,38.88126805,0</coordinates></Point></Placemark>
+8th Street SE And L Street SE -76.9949701 38.87753218
+<Placemark><name>8th Street SE And L Street SE</name><description>Blue Southbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-76.9949701,38.87753218,0</coordinates></Point></Placemark>
+600 M Street SE (Washington Navy Yard entrance) -76.99865258 38.87585537
+<Placemark><name>600 M Street SE (Washington Navy Yard entrance)</name><description>Blue Southbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-76.99865258,38.87585537,0</coordinates></Point></Placemark>
+M Street SE And 3rd Street SE -77.00203811 38.87648035
+<Placemark><name>M Street SE And 3rd Street SE</name><description>Blue Southbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-77.00203811,38.87648035,0</coordinates></Point></Placemark>
+1st Street SE And K Street SE -77.00588221 38.87840568
+<Placemark><name>1st Street SE And K Street SE</name><description>Blue Southbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-77.00588221,38.87840568,0</coordinates></Point></Placemark>
+New Jersey Avenue SE And M Street SE (Navy Yard Metro entrance) -77.00415905 38.87648091
+<Placemark><name>New Jersey Avenue SE And M Street SE (Navy Yard Metro entrance)</name><description>Blue Southbound</description><styleUrl>#blue_endpoint</styleUrl><Point><coordinates>-77.00415905,38.87648091,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Blue Northbound</name>
+<Placemark><name>New Jersey Avenue SE And M Street SE (Navy Yard Metro entrance)</name><description>Blue Northbound</description><styleUrl>#blue_endpoint</styleUrl><Point><coordinates>-77.00415905,38.87648091,0</coordinates></Point></Placemark>
+M Street SE And 4th Street SE -77.00058074 38.87647991
+<Placemark><name>M Street SE And 4th Street SE</name><description>Blue Northbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-77.00058074,38.87647991,0</coordinates></Point></Placemark>
+600 M Street SE (Washington Navy Yard entrance) -76.99865258 38.87585537
+<Placemark><name>600 M Street SE (Washington Navy Yard entrance)</name><description>Blue Northbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-76.99865258,38.87585537,0</coordinates></Point></Placemark>
+8th Street SE And L Street SE -76.9949701 38.87753218
+<Placemark><name>8th Street SE And L Street SE</name><description>Blue Northbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-76.9949701,38.87753218,0</coordinates></Point></Placemark>
+8th Street SE And G Street SE -76.99497491 38.88126805
+<Placemark><name>8th Street SE And G Street SE</name><description>Blue Northbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-76.99497491,38.88126805,0</coordinates></Point></Placemark>
+Pennsylvania Avenue SE And 7th Street SE -76.99617461 38.884675
+<Placemark><name>Pennsylvania Avenue SE And 7th Street SE</name><description>Blue Northbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-76.99617461,38.884675,0</coordinates></Point></Placemark>
+Pennsylvania Avenue SE And 3rd Street SE -77.00204191 38.88706801
+<Placemark><name>Pennsylvania Avenue SE And 3rd Street SE</name><description>Blue Northbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-77.00204191,38.88706801,0</coordinates></Point></Placemark>
+1st Street NE And Maryland Avenue NE (U.S. Capitol) -77.00592451 38.89096903
+<Placemark><name>1st Street NE And Maryland Avenue NE (U.S. Capitol)</name><description>Blue Northbound</description><styleUrl>#blue_stop</styleUrl><Point><coordinates>-77.00592451,38.89096903,0</coordinates></Point></Placemark>
+Union Station Parking Garage Mezzanine Level -77.00617913 38.89753847
+<Placemark><name>Union Station Parking Garage Mezzanine Level</name><description>Blue Northbound</description><styleUrl>#blue_endpoint</styleUrl><Point><coordinates>-77.00617913,38.89753847,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Purple Loop</name>
+<Placemark><name>Constitution Avenue NW And 17th Street NW</name><description>Purple Loop</description><styleUrl>#purple_endpoint</styleUrl><Point><coordinates>-77.03948096,38.89209974,0</coordinates></Point></Placemark>
+Constitution Avenue NW And 14th Street NW (Museum of American History) -77.03196384 38.89209321
+<Placemark><name>Constitution Avenue NW And 14th Street NW (Museum of American History)</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.03196384,38.89209321,0</coordinates></Point></Placemark>
+Constitution Avenue NW And 10th Street NW (Museum of Natural History) -77.02599044 38.89208194
+<Placemark><name>Constitution Avenue NW And 10th Street NW (Museum of Natural History)</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.02599044,38.89208194,0</coordinates></Point></Placemark>
+Constitution Avenue NW And 7th Street NW -77.0219001 38.89207809
+<Placemark><name>Constitution Avenue NW And 7th Street NW</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.0219001,38.89207809,0</coordinates></Point></Placemark>
+Constitution Avenue NW And 6th Street NW (National Gallery of Art West Bldg) -77.0199108 38.89207584
+<Placemark><name>Constitution Avenue NW And 6th Street NW (National Gallery of Art West Bldg)</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.0199108,38.89207584,0</coordinates></Point></Placemark>
+Constitution Avenue NW And 4th Street NW (National Gallery of Art East Bldg) -77.01756466 38.89210938
+<Placemark><name>Constitution Avenue NW And 4th Street NW (National Gallery of Art East Bldg)</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.01756466,38.89210938,0</coordinates></Point></Placemark>
+1st Street NE And Maryland Avenue NE (U.S. Capitol) -77.00592451 38.89096903
+<Placemark><name>1st Street NE And Maryland Avenue NE (U.S. Capitol)</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.00592451,38.89096903,0</coordinates></Point></Placemark>
+Independence Avenue SW And 2nd Street SW (U. S. Botanical Gardens) -77.00351948 38.88761368
+<Placemark><name>Independence Avenue SW And 2nd Street SW (U. S. Botanical Gardens)</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.00351948,38.88761368,0</coordinates></Point></Placemark>
+Independence Avenue SW And 4th Street SW (Museum of the American Indian) -77.01754691 38.88757127
+<Placemark><name>Independence Avenue SW And 4th Street SW (Museum of the American Indian)</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.01754691,38.88757127,0</coordinates></Point></Placemark>
+Independence Avenue SW And 6th Street SW (Air and Space Museum) -77.01990733 38.88756704
+<Placemark><name>Independence Avenue SW And 6th Street SW (Air and Space Museum)</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.01990733,38.88756704,0</coordinates></Point></Placemark>
+Independence Avenue SW And 9th Street SW (Hirshhorn Museum) -77.02401584 38.88756497
+<Placemark><name>Independence Avenue SW And 9th Street SW (Hirshhorn Museum)</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.02401584,38.88756497,0</coordinates></Point></Placemark>
+Independence Avenue SW And 10th Street SW (Smithsonian Castle) -77.02599078 38.88756629
+<Placemark><name>Independence Avenue SW And 10th Street SW (Smithsonian Castle)</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.02599078,38.88756629,0</coordinates></Point></Placemark>
+Independence Avenue SW And 14th Street SW -77.03195162 38.88756722
+<Placemark><name>Independence Avenue SW And 14th Street SW</name><description>Purple Loop</description><styleUrl>#purple_stop</styleUrl><Point><coordinates>-77.03195162,38.88756722,0</coordinates></Point></Placemark>
+Constitution Avenue NW And 17th Street NW -77.03948096 38.89209974
+<Placemark><name>Constitution Avenue NW And 17th Street NW</name><description>Purple Loop</description><styleUrl>#purple_endpoint</styleUrl><Point><coordinates>-77.03948096,38.89209974,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Yellow Westbound</name>
+<Placemark><name>Union Station Garage</name><description>Yellow Westbound</description><styleUrl>#yellow_endpoint</styleUrl><Point><coordinates>-77.00617913,38.89753847,0</coordinates></Point></Placemark>
+"Massachusetts Ave, NE And North Capitol Street NE" -77.00906439 38.89746933
+<Placemark><name>Massachusetts Ave, NE And North Capitol Street NE</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.00906439,38.89746933,0</coordinates></Point></Placemark>
+"Massachusetts Ave, NW And New Jersey Avenue, NW" -77.01242737 38.8988566
+<Placemark><name>Massachusetts Ave, NW And New Jersey Avenue, NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.01242737,38.8988566,0</coordinates></Point></Placemark>
+"Massachusetts Avenue, NW And 5th Street NW" -77.01892694 38.90112396
+<Placemark><name>Massachusetts Avenue, NW And 5th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.01892694,38.90112396,0</coordinates></Point></Placemark>
+"Massachusetts Avenue, NW And 7th Street NW" -77.02191502 38.90210136
+<Placemark><name>Massachusetts Avenue, NW And 7th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.02191502,38.90210136,0</coordinates></Point></Placemark>
+"New York Avenue, NW And 9th Street NW" -77.0239891 38.90208883
+<Placemark><name>New York Avenue, NW And 9th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.0239891,38.90208883,0</coordinates></Point></Placemark>
+"K Street NW Between 12th And 13th Streets, NW" -77.02914906 38.90288785
+<Placemark><name>K Street NW Between 12th And 13th Streets, NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.02914906,38.90288785,0</coordinates></Point></Placemark>
+K Street NW And 14th Street NW -77.03195509 38.90252276
+<Placemark><name>K Street NW And 14th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.03195509,38.90252276,0</coordinates></Point></Placemark>
+K Street NW And 16th Street NW -77.03654205 38.9025252
+<Placemark><name>K Street NW And 16th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.03654205,38.9025252,0</coordinates></Point></Placemark>
+K Street NW And 17th Street NW -77.03944583 38.9025231
+<Placemark><name>K Street NW And 17th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.03944583,38.9025231,0</coordinates></Point></Placemark>
+K Street NW And 18th Street NW -77.0416885 38.90252486
+<Placemark><name>K Street NW And 18th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.0416885,38.90252486,0</coordinates></Point></Placemark>
+K Street NW And 19th Street NW -77.04345994 38.90252407
+<Placemark><name>K Street NW And 19th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04345994,38.90252407,0</coordinates></Point></Placemark>
+K Street NW And 20th Street NW -77.04489742 38.90252507
+<Placemark><name>K Street NW And 20th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04489742,38.90252507,0</coordinates></Point></Placemark>
+21st Street NW And K Street NW -77.04664868 38.90252594
+<Placemark><name>21st Street NW And K Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04664868,38.90252594,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 22nd Street NW" -77.04883143 38.90208789
+<Placemark><name>Pennsylvania Avenue, NW And 22nd Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04883143,38.90208789,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 24th Street NW" -77.05141648 38.90297745
+<Placemark><name>Pennsylvania Avenue, NW And 24th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05141648,38.90297745,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 25th Street NW" -77.05330311 38.90363616
+<Placemark><name>Pennsylvania Avenue, NW And 25th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05330311,38.90363616,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 28th Street NW" -77.05704706 38.9049413
+<Placemark><name>Pennsylvania Avenue, NW And 28th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05704706,38.9049413,0</coordinates></Point></Placemark>
+M Street NW And 30th Street NW -77.05916771 38.90521862
+<Placemark><name>M Street NW And 30th Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05916771,38.90521862,0</coordinates></Point></Placemark>
+"M Street NW And Wisconsin Avenue, NW" -77.06281147 38.90517663
+<Placemark><name>M Street NW And Wisconsin Avenue, NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06281147,38.90517663,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And N Street NW" -77.06303649 38.90682485
+<Placemark><name>Wisconsin Avenue, NW And N Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06303649,38.90682485,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And Dumbarton Street NW" -77.06344784 38.90760865
+<Placemark><name>Wisconsin Avenue, NW And Dumbarton Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06344784,38.90760865,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And P Street NW" -77.06409813 38.9088377
+<Placemark><name>Wisconsin Avenue, NW And P Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06409813,38.9088377,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And Q Street NW" -77.0649042 38.91036047
+<Placemark><name>Wisconsin Avenue, NW And Q Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.0649042,38.91036047,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And 34th Street NW (Safeway)" -77.06779476 38.91576132
+<Placemark><name>Wisconsin Avenue, NW And 34th Street NW (Safeway)</name><description>Yellow Westbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06779476,38.91576132,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And Whitehaven Street NW" -77.06875205 38.91696572
+<Placemark><name>Wisconsin Avenue, NW And Whitehaven Street NW</name><description>Yellow Westbound</description><styleUrl>#yellow_endpoint</styleUrl><Point><coordinates>-77.06875205,38.91696572,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Yellow Eastbound</name>
+<Placemark><name>Whitehaven Street NW And Wisconsin Avenue, NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_endpoint</styleUrl><Point><coordinates>-77.06875205,38.91696572,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And 34th Street NW" -77.06779476 38.91576132
+<Placemark><name>Wisconsin Avenue, NW And 34th Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06779476,38.91576132,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And Q Street NW" -77.0649042 38.91036047
+<Placemark><name>Wisconsin Avenue, NW And Q Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.0649042,38.91036047,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And P Street NW" -77.06409813 38.9088377
+<Placemark><name>Wisconsin Avenue, NW And P Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06409813,38.9088377,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And O Street NW" -77.06386659 38.90839813
+<Placemark><name>Wisconsin Avenue, NW And O Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06386659,38.90839813,0</coordinates></Point></Placemark>
+"M Street NW And Wisconsin Avenue, NW" -77.06281147 38.90517663
+<Placemark><name>M Street NW And Wisconsin Avenue, NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06281147,38.90517663,0</coordinates></Point></Placemark>
+M Street NW And Thomas Jefferson Street NW -77.06016184 38.90520134
+<Placemark><name>M Street NW And Thomas Jefferson Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06016184,38.90520134,0</coordinates></Point></Placemark>
+M Street NW And 28th Street NW -77.05701191 38.90523198
+<Placemark><name>M Street NW And 28th Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05701191,38.90523198,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 26th Street NW" -77.05475402 38.904127
+<Placemark><name>Pennsylvania Avenue, NW And 26th Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05475402,38.904127,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 24th Street NW" -77.05141648 38.90297745
+<Placemark><name>Pennsylvania Avenue, NW And 24th Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05141648,38.90297745,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 22nd Street NW" -77.04883143 38.90208789
+<Placemark><name>Pennsylvania Avenue, NW And 22nd Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04883143,38.90208789,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 21St Street NW" -77.04665258 38.90131811
+<Placemark><name>Pennsylvania Avenue, NW And 21St Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04665258,38.90131811,0</coordinates></Point></Placemark>
+K Street NW And 19th Street NW -77.04345994 38.90252407
+<Placemark><name>K Street NW And 19th Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04345994,38.90252407,0</coordinates></Point></Placemark>
+K Street NW And 17th Street NW -77.03850956 38.9025232
+<Placemark><name>K Street NW And 17th Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.03850956,38.9025232,0</coordinates></Point></Placemark>
+K Street NW And 16th Street NW -77.03654205 38.9025252
+<Placemark><name>K Street NW And 16th Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.03654205,38.9025252,0</coordinates></Point></Placemark>
+K Street NW And 14th Street NW -77.03195509 38.90252276
+<Placemark><name>K Street NW And 14th Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.03195509,38.90252276,0</coordinates></Point></Placemark>
+"K Street NW Between 12th And 13th Streets, NW" -77.02914906 38.90288785
+<Placemark><name>K Street NW Between 12th And 13th Streets, NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.02914906,38.90288785,0</coordinates></Point></Placemark>
+"K Street NW Between 11th And 10th Streets, NW" -77.02669784 38.90228524
+<Placemark><name>K Street NW Between 11th And 10th Streets, NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.02669784,38.90228524,0</coordinates></Point></Placemark>
+"New York Avenue, NW And 9th Street NW" -77.0239891 38.90208883
+<Placemark><name>New York Avenue, NW And 9th Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.0239891,38.90208883,0</coordinates></Point></Placemark>
+"Massachusetts Avenue, NW And 7th Street NW" -77.02191502 38.90210136
+<Placemark><name>Massachusetts Avenue, NW And 7th Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.02191502,38.90210136,0</coordinates></Point></Placemark>
+"Massachusetts Avenue, NW And 5th Street NW" -77.01892694 38.90112396
+<Placemark><name>Massachusetts Avenue, NW And 5th Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.01892694,38.90112396,0</coordinates></Point></Placemark>
+"Massachusetts Avenue, NW And 1st Street NW" -77.00777834 38.89686006
+<Placemark><name>Massachusetts Avenue, NW And 1st Street NW</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.00777834,38.89686006,0</coordinates></Point></Placemark>
+"Massachusetts Avenue, NE And 1st Street NE" -77.00777834 38.89686006
+<Placemark><name>Massachusetts Avenue, NE And 1st Street NE</name><description>Yellow Eastbound</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.00777834,38.89686006,0</coordinates></Point></Placemark>
+Union Station Parking Garage Mezzanine Level -77.00617913 38.89753847
+<Placemark><name>Union Station Parking Garage Mezzanine Level</name><description>Yellow Eastbound</description><styleUrl>#yellow_endpoint</styleUrl><Point><coordinates>-77.00617913,38.89753847,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Red Southbound</name>
+<Placemark><name>O Street NW Between 8th And 9th Streets, NW</name><description>Red Southbound</description><styleUrl>#red_endpoint</styleUrl><Point><coordinates>-77.0236684,38.90829753,0</coordinates></Point></Placemark>
+9th Street NW And N Street NW -77.02396275 38.90724388
+<Placemark><name>9th Street NW And N Street NW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02396275,38.90724388,0</coordinates></Point></Placemark>
+"9th Street NW And Massachusetts Avenue, NW" -77.024043 38.90292846
+<Placemark><name>9th Street NW And Massachusetts Avenue, NW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.024043,38.90292846,0</coordinates></Point></Placemark>
+9th Street NW And Eye Street NW -77.02397692 38.90086711
+<Placemark><name>9th Street NW And Eye Street NW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02397692,38.90086711,0</coordinates></Point></Placemark>
+9th Street NW And H Street NW -77.02396523 38.89980953
+<Placemark><name>9th Street NW And H Street NW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02396523,38.89980953,0</coordinates></Point></Placemark>
+9th Street NW And F Street NW -77.02397016 38.89728798
+<Placemark><name>9th Street NW And F Street NW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02397016,38.89728798,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 9th Street NW" -77.02397514 38.89387657
+<Placemark><name>Pennsylvania Avenue, NW And 9th Street NW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02397514,38.89387657,0</coordinates></Point></Placemark>
+"7th Street NW And Constitution Avenue, NW" -77.0219001 38.89207809
+<Placemark><name>7th Street NW And Constitution Avenue, NW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.0219001,38.89207809,0</coordinates></Point></Placemark>
+"7th Street NW And Madison Drive, NW" -77.02190799 38.89053816
+<Placemark><name>7th Street NW And Madison Drive, NW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02190799,38.89053816,0</coordinates></Point></Placemark>
+"7th Street SW And Independence Ave, SW" -77.02191568 38.88756287
+<Placemark><name>7th Street SW And Independence Ave, SW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191568,38.88756287,0</coordinates></Point></Placemark>
+"7th Street SW And Maryland Avenue, SW" -77.02191205 38.88632233
+<Placemark><name>7th Street SW And Maryland Avenue, SW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191205,38.88632233,0</coordinates></Point></Placemark>
+7th Street SW And E Street SW -77.02190573 38.88323777
+<Placemark><name>7th Street SW And E Street SW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02190573,38.88323777,0</coordinates></Point></Placemark>
+7th Street SW And G Street SW -77.02190589 38.8812796
+<Placemark><name>7th Street SW And G Street SW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02190589,38.8812796,0</coordinates></Point></Placemark>
+I Street SW And 7th Street SW -77.02192223 38.87929527
+<Placemark><name>I Street SW And 7th Street SW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02192223,38.87929527,0</coordinates></Point></Placemark>
+6th Street SW And K Street SW -77.01989187 38.87841116
+<Placemark><name>6th Street SW And K Street SW</name><description>Red Southbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.01989187,38.87841116,0</coordinates></Point></Placemark>
+6th Street SW And Water Street SW -77.02072904 38.87569372
+<Placemark><name>6th Street SW And Water Street SW</name><description>Red Southbound</description><styleUrl>#red_endpoint</styleUrl><Point><coordinates>-77.02072904,38.87569372,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Red Northbound</name>
+<Placemark><name>6th Street SW And Water Street SW</name><description>Red Northbound</description><styleUrl>#red_endpoint</styleUrl><Point><coordinates>-77.02072904,38.87569372,0</coordinates></Point></Placemark>
+Water Street SW And 7th Street SW -77.02310635 38.87831195
+<Placemark><name>Water Street SW And 7th Street SW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02310635,38.87831195,0</coordinates></Point></Placemark>
+Water Street SW And 9th Street SW -77.02523836 38.87999778
+<Placemark><name>Water Street SW And 9th Street SW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02523836,38.87999778,0</coordinates></Point></Placemark>
+"G Street SW Between 9th and 7th Streets, SW" -77.02340192 38.88147445
+<Placemark><name>G Street SW Between 9th and 7th Streets, SW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02340192,38.88147445,0</coordinates></Point></Placemark>
+7th Street SW And G Street SW -77.02190589 38.8812796
+<Placemark><name>7th Street SW And G Street SW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02190589,38.8812796,0</coordinates></Point></Placemark>
+"7th Street SW And Maryland Avenue, SW" -77.02191205 38.88632233
+<Placemark><name>7th Street SW And Maryland Avenue, SW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191205,38.88632233,0</coordinates></Point></Placemark>
+"7th Street SW And Independence Ave, SW" -77.02191568 38.88756287
+<Placemark><name>7th Street SW And Independence Ave, SW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191568,38.88756287,0</coordinates></Point></Placemark>
+"7th Street NW And Constitution Avenue, NW" -77.0219001 38.89207809
+<Placemark><name>7th Street NW And Constitution Avenue, NW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.0219001,38.89207809,0</coordinates></Point></Placemark>
+"7th  Street NW And Pennsylvania Avenue, NW" -77.02191906 38.89329477
+<Placemark><name>7th  Street NW And Pennsylvania Avenue, NW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191906,38.89329477,0</coordinates></Point></Placemark>
+7th Street NW And E Street NW -77.02191725 38.89613181
+<Placemark><name>7th Street NW And E Street NW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191725,38.89613181,0</coordinates></Point></Placemark>
+7th Street NW And F Street NW -77.02191587 38.89727566
+<Placemark><name>7th Street NW And F Street NW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191587,38.89727566,0</coordinates></Point></Placemark>
+7th Street NW And H Street NW -77.02191443 38.89981313
+<Placemark><name>7th Street NW And H Street NW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191443,38.89981313,0</coordinates></Point></Placemark>
+"7th Street NW And Massachusetts, NW" -77.02191502 38.90210136
+<Placemark><name>7th Street NW And Massachusetts, NW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191502,38.90210136,0</coordinates></Point></Placemark>
+7th Street NW And L Street NW -77.02191395 38.90416783
+<Placemark><name>7th Street NW And L Street NW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191395,38.90416783,0</coordinates></Point></Placemark>
+7th Street NW And M Street NW -77.02191414 38.90564349
+<Placemark><name>7th Street NW And M Street NW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191414,38.90564349,0</coordinates></Point></Placemark>
+7th Street NW And N Street NW -77.02191902 38.90723986
+<Placemark><name>7th Street NW And N Street NW</name><description>Red Northbound</description><styleUrl>#red_stop</styleUrl><Point><coordinates>-77.02191902,38.90723986,0</coordinates></Point></Placemark>
+"O Street NW Between 8th And 9th Streets, NW" -77.0236684 38.90829753
+<Placemark><name>O Street NW Between 8th And 9th Streets, NW</name><description>Red Northbound</description><styleUrl>#red_endpoint</styleUrl><Point><coordinates>-77.0236684,38.90829753,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Yellow Westbound (extended service)</name>
+<Placemark><name>K Street NW And 17th Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_endpoint</styleUrl><Point><coordinates>-77.03944583,38.9025231,0</coordinates></Point></Placemark>
+K Street NW And 18th Street NW -77.0416885 38.90252486
+<Placemark><name>K Street NW And 18th Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.0416885,38.90252486,0</coordinates></Point></Placemark>
+K Street NW And 19th Street NW -77.04345994 38.90252407
+<Placemark><name>K Street NW And 19th Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04345994,38.90252407,0</coordinates></Point></Placemark>
+K Street NW And 20th Street NW -77.04489742 38.90252507
+<Placemark><name>K Street NW And 20th Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04489742,38.90252507,0</coordinates></Point></Placemark>
+21st Street NW And K Street NW -77.04664868 38.90252594
+<Placemark><name>21st Street NW And K Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04664868,38.90252594,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 22nd Street NW" -77.04883143 38.90208789
+<Placemark><name>Pennsylvania Avenue, NW And 22nd Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04883143,38.90208789,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 24th Street NW" -77.05141648 38.90297745
+<Placemark><name>Pennsylvania Avenue, NW And 24th Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05141648,38.90297745,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 25th Street NW" -77.05330311 38.90363616
+<Placemark><name>Pennsylvania Avenue, NW And 25th Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05330311,38.90363616,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 28th Street NW" -77.05704706 38.9049413
+<Placemark><name>Pennsylvania Avenue, NW And 28th Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05704706,38.9049413,0</coordinates></Point></Placemark>
+M Street NW And 30th Street NW -77.05916771 38.90521862
+<Placemark><name>M Street NW And 30th Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05916771,38.90521862,0</coordinates></Point></Placemark>
+"M Street NW And Wisconsin Avenue, NW" -77.06281147 38.90517663
+<Placemark><name>M Street NW And Wisconsin Avenue, NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06281147,38.90517663,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And N Street NW" -77.06303649 38.90682485
+<Placemark><name>Wisconsin Avenue, NW And N Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06303649,38.90682485,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And Dumbarton Street NW" -77.06344784 38.90760865
+<Placemark><name>Wisconsin Avenue, NW And Dumbarton Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06344784,38.90760865,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And P Street NW" -77.06409813 38.9088377
+<Placemark><name>Wisconsin Avenue, NW And P Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06409813,38.9088377,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And Q Street NW" -77.0649042 38.91036047
+<Placemark><name>Wisconsin Avenue, NW And Q Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.0649042,38.91036047,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And 34th Street NW (Safeway)" -77.06779476 38.91576132
+<Placemark><name>Wisconsin Avenue, NW And 34th Street NW (Safeway)</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06779476,38.91576132,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And Whitehaven Street NW" -77.06875205 38.91696572
+<Placemark><name>Wisconsin Avenue, NW And Whitehaven Street NW</name><description>Yellow Westbound (extended service)</description><styleUrl>#yellow_endpoint</styleUrl><Point><coordinates>-77.06875205,38.91696572,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Yellow Eastbound (extended service)</name>
+<Placemark><name>Whitehaven Street NW And Wisconsin Avenue, NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_endpoint</styleUrl><Point><coordinates>-77.06875205,38.91696572,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And 34th Street NW" -77.06779476 38.91576132
+<Placemark><name>Wisconsin Avenue, NW And 34th Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06779476,38.91576132,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And Q Street NW" -77.0649042 38.91036047
+<Placemark><name>Wisconsin Avenue, NW And Q Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.0649042,38.91036047,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And P Street NW" -77.06409813 38.9088377
+<Placemark><name>Wisconsin Avenue, NW And P Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06409813,38.9088377,0</coordinates></Point></Placemark>
+"Wisconsin Avenue, NW And O Street NW" -77.06386659 38.90839813
+<Placemark><name>Wisconsin Avenue, NW And O Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06386659,38.90839813,0</coordinates></Point></Placemark>
+"M Street NW And Wisconsin Avenue, NW" -77.06281147 38.90517663
+<Placemark><name>M Street NW And Wisconsin Avenue, NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06281147,38.90517663,0</coordinates></Point></Placemark>
+M Street NW And Thomas Jefferson Street NW -77.06016184 38.90520134
+<Placemark><name>M Street NW And Thomas Jefferson Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.06016184,38.90520134,0</coordinates></Point></Placemark>
+M Street NW And 28th Street NW -77.05701191 38.90523198
+<Placemark><name>M Street NW And 28th Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05701191,38.90523198,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 26th Street NW" -77.05475402 38.904127
+<Placemark><name>Pennsylvania Avenue, NW And 26th Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05475402,38.904127,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 24th Street NW" -77.05141648 38.90297745
+<Placemark><name>Pennsylvania Avenue, NW And 24th Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.05141648,38.90297745,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 22nd Street NW" -77.04883143 38.90208789
+<Placemark><name>Pennsylvania Avenue, NW And 22nd Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04883143,38.90208789,0</coordinates></Point></Placemark>
+"Pennsylvania Avenue, NW And 21St Street NW" -77.04665258 38.90131811
+<Placemark><name>Pennsylvania Avenue, NW And 21St Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04665258,38.90131811,0</coordinates></Point></Placemark>
+K Street NW And 19th Street NW -77.04345994 38.90252407
+<Placemark><name>K Street NW And 19th Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_stop</styleUrl><Point><coordinates>-77.04345994,38.90252407,0</coordinates></Point></Placemark>
+K Street NW And 17th Street NW -77.03850956 38.9025232
+<Placemark><name>K Street NW And 17th Street NW</name><description>Yellow Eastbound (extended service)</description><styleUrl>#yellow_endpoint</styleUrl><Point><coordinates>-77.03850956,38.9025232,0</coordinates></Point></Placemark>
+</Folder>
+</Document></kml>

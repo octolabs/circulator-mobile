@@ -1,0 +1,437 @@
+from __future__ import division
+import math
+import logging
+
+import cgi
+import models
+from google.appengine.ext import db
+from google.appengine.ext import webapp
+from google.appengine.ext.webapp.util import run_wsgi_app
+import time
+from datetime import datetime
+from datetime import timedelta
+from google.appengine.api import memcache
+
+class BusUpdate(webapp.RequestHandler):
+  def get(self):
+    #logging.debug("busupdate: "+self.request.get('address'))
+    time_start = datetime.utcnow() 
+
+    bus = models.GPS.all().filter("address =", cgi.escape(self.request.get('address'))).get()
+
+    self.update(bus)
+
+    time_finish = datetime.utcnow() 
+    #logging.debug("start: "+time_start.strftime("%H:%M:%S")+" finish: "+time_finish.strftime("%H:%M:%S"))
+
+  def update(self, bus):
+      """ Update bus on route information """
+
+      logging.debug("bus: %s expiration check" % (bus.busnumber))
+      #if bus data expired, reset it
+      if self.is_expired(bus):
+          logging.debug("bus: %s record expired" % (bus.busnumber))
+          bus.comment="bus record is expired"
+          self.no_passengers(bus)
+          bus.put()
+          return
+
+      logging.debug("bus: %s boundary check" % (bus.busnumber))
+      #is bus in boundary - dc circulator boundary check
+      if self.is_in_boundary(bus):
+
+          logging.debug("bus: %s checkpoints check" % (bus.busnumber))
+          #always do checkpoints check
+          self.check_points(bus)
+          bus.put()
+          logging.debug("bus: %s checkpoints check done, bus info saved" % (bus.busnumber))
+        
+          #if info about current route exists
+          if (bus.status == "On Route"):
+              logging.debug("bus: %s stops check" % (bus.busnumber))
+              bus.comment="info about current route exists"
+              self.check_stops(bus)
+              bus.put()
+          else:
+          #no info about bus current route, do nothing (we rely on checkpoint mechanism only to find route)
+              logging.debug("no info about current route")
+              bus.comment="no info about bus current route"
+              bus.put()
+              
+      #or "no passengers/off route"
+      else:
+          logging.debug("bus: %s is off route" % (bus.busnumber))
+          bus.comment="bus is off route"
+          self.no_passengers(bus)
+          bus.put()
+          return
+
+  def check_points(self, bus):
+    """ find closest checkpoint """
+    point=self.get_closest_checkpoint(bus)
+    
+    #single checkpoint nearby bus stop
+    if (point!=None):
+        logging.debug("bus: %s at checkpoint %s" % (bus.busnumber, point.checkpoint_id))
+        
+        if (bus.checkpoint_id == None):
+            #bus has no previous checkpoints saved, adding current checkpoint to bus record
+            logging.debug("no previous checkpoint saved for bus: %s saving checkpoint %s" % (bus.busnumber, point.checkpoint_id))
+            bus.checkpoint_id=point.checkpoint_id
+            
+        else: 
+            #bus has checkpoint saved, verifying if new checkpoint match
+            logging.debug("looking up old checkpoint: %s" % (bus.checkpoint_id))
+            #point_old = db.GqlQuery("SELECT * FROM Checkpoint WHERE checkpoint_id=:1", bus.checkpoint_id).get()
+            point_old=models.Checkpoint.all().filter("checkpoint_id =", bus.checkpoint_id).get()
+            
+            logging.debug("checkpoint type is %s" % (point_old.__class__))
+            logging.debug("found old checkpoint: %s" % (point_old.checkpoint_id))
+            
+            route_id=point_old.route_id
+            if (route_id==point.route_id):
+                #checkpoints on the same route
+                if (point_old.checkpoint_number2==0) and (point.checkpoint_number2==1):
+                    #checkpoints sequence match
+                    #yay, bus route is identified!!!
+                    logging.debug("bus: %s at route %s" % (bus.busnumber, point.route_id))
+                    self.set_bus_on_route(bus,point.route_id)
+                    #TODO: fill in all other bus attributes
+                elif (point_old.checkpoint_id==point.checkpoint_id):
+                    #bus at the same checkpoint, save it again
+                    logging.debug("bus: %s at the same checkpoint %s" % (bus.busnumber, point.checkpoint_id))
+                    bus.checkpoint_id=point.checkpoint_id
+
+                else:
+                    #checkpoints from the same route do not match, bus going in opposite direction 
+                    logging.debug("bus: %s different checkpoints from the same route" % (bus.busnumber))
+                    bus.checkpoint_id=point.checkpoint_id
+
+            else:
+              #checkpoints do not match, new checkpoint from different route, assign new checkpoint
+              logging.debug("bus: %s at new checkpoint, that doesn't match with old checkpoint %s" % (bus.busnumber, point.checkpoint_id))
+              bus.checkpoint_id=point.checkpoint_id
+              
+    #no nearby checkpoints
+    else:
+        #TODO: do nothing
+        bus.status=bus.status
+        logging.debug("bus: %s no matching checkpoints" % (bus.busnumber))
+
+  def get_closest_checkpoint(self, bus):
+    """ return closest checkpoint for the bus """
+    checkpoints=self.get_checkpoints()
+
+    matched_checkpoints=[]
+
+    for checkpoint in checkpoints:
+        dist=self.distance(checkpoint.checkpoint_lat, checkpoint.checkpoint_lon, bus.latitude, bus.longitude)
+        if (dist<=checkpoint.radius) :
+            matched_checkpoints.append((checkpoint, dist))
+
+    logging.debug("# checkpoints found: %s" % (len(matched_checkpoints)))
+
+    if len(matched_checkpoints)==1:
+        #single checkpoint nearby bus 
+        checkpoint=matched_checkpoints[0][0]
+        radius=matched_checkpoints[0][1]
+
+        return checkpoint
+    elif len(matched_checkpoints)==0:
+        #no nearby checkpoints
+        return None
+    else:
+        #multiple nearby checkpoints, find closest
+        num=0
+        proximity=100 # 100 miles
+        for i in range(len(matched_checkpoints)):
+            checkpoint=matched_checkpoints[i][0]
+            radius=matched_checkpoints[i][1]
+            if radius<proximity:
+                proximity=radius
+                num=i
+                
+        checkpoint=matched_checkpoints[num][0]
+        return checkpoint
+
+
+  def check_stops(self, bus):
+    """ Bus is on route, find closest bus stop"""
+    stop = self.get_closest_stop_on_route(bus)
+
+    if (stop==None):
+        logging.debug("bus: %s no stops nearby" % (bus.busnumber))
+        #no stops found, let's check if bus between stops and update bus info
+        if (bus.bus_stop!=None):
+            logging.debug("bus: %s was at stop %s" % (bus.busnumber, bus.bus_stop))
+            #bus was at some stop
+            #stop = db.GqlQuery("SELECT * FROM Stop WHERE stop_id = %s" % (bus.bus_stop)).get()
+            stop = models.Stop.all().filter("stop_id =", bus.bus_stop).get()
+            logging.debug("stop type is %s" % (stop.__class__))
+            stop_number=stop.stop_number
+            if (stop_number=="End"):
+                #bus was at end of the route
+                #TODO: this shouldn't happen, ever, but let's switch bus to complimentary route, just in case
+                #route = db.GqlQuery("SELECT * FROM Route WHERE route_id = %s" % (bus.on_route)).get()
+                route = models.Route.all().filter("route_id =", bus.on_route).get()
+                self.set_bus_on_route(bus, route.complimentary)
+                logging.debug("bus: %s switched to complimentary route %s" % (bus.busnumber, route.complimentary))
+            else:
+                #bus just left some stop, let's update its info as between stops
+                #nextstop = db.GqlQuery("SELECT * FROM Stop WHERE stop_number2 = %s" % (stop.stop_number2+1)).get()
+                nextstop = models.Stop.all().filter("stop_number2 =", stop.stop_number2+1).get()
+                logging.debug("nextstop type is %s" % (nextstop.__class__))
+                self.set_bus_between_stops(bus, stop.stop_id, nextstop.stop_id)
+                logging.debug("bus: %s left a bus stop, now between stops %s and %s" % (bus.busnumber, stop.stop_id, nextstop.stop_id))
+                
+        #if bus not at the stop, then it is between stops
+        #this info should be already populated in bus record, do nothing    
+
+    else:
+        #stop found
+        logging.debug("bus: %s is near stop %s" % (bus.busnumber, stop.stop_id))
+        if (stop.stop_number=="End"):
+            #TODO: some smart handling required here
+            #bus arrived to the end of the route
+            self.set_bus_on_stop(bus, stop.stop_id)
+            
+            #switch bus route to complimentary route
+            logging.debug("bus: %s is at route %s" % (bus.busnumber, bus.on_route))
+
+            #route = db.GqlQuery("SELECT * FROM Route WHERE route_id = %s" % (bus.on_route)).get()
+            route = models.Route.all().filter("route_id =", bus.on_route).get()
+            logging.debug("route type is %s" % (route.__class__))
+            complimentary=route.complimentary
+            self.set_bus_on_route(bus, complimentary)
+            logging.debug("bus: %s switched to complimentary route %s" % (bus.busnumber, route.complimentary))
+        else:
+            #set bus on current stop
+            self.set_bus_on_stop(bus, stop.stop_id)
+            logging.debug("bus: %s is set on stop %s" % (bus.busnumber, stop.stop_number))
+        
+
+  def get_closest_stop_on_route(self, bus):
+    """ return closest stop on route """
+    stops=self.get_stops_by_route(bus.on_route)
+
+    matched_stops=[]
+
+    for stop in stops:
+        dist=self.distance(stop.stop_lat, stop.stop_lon, bus.latitude, bus.longitude)
+        if (dist<=stop.radius) :
+            matched_stops.append((stop, dist))
+
+    logging.debug("# stops found: %s" % (len(matched_stops)))
+
+    if len(matched_stops)==1:
+        #single stop nearby bus stop
+        stop=matched_stops[0][0]
+        radius=matched_stops[0][1]
+
+        return stop
+    elif len(matched_stops)==0:
+        #no nearby stops
+        return None
+    else:
+        #multiple nearby stops, find closest
+        num=0
+        proximity=100 # 100 miles
+        for i in range(len(matched_stops)):
+            stop=matched_stops[i][0]
+            radius=matched_stops[i][1]
+            if radius<proximity:
+                proximity=radius
+                num=i
+                
+        stop=matched_stops[num][0]
+        return stop
+
+  def set_bus_on_route(self, bus, route_id):
+      """ sets bus data to match current route_id """
+      route=models.Route.all().filter("route_id =", route_id).get()
+      bus.status="On Route"
+      bus.bus_stop=None
+      bus.on_route=route_id
+      bus.route_color=route.route_color
+      bus.update_date=self.now()
+      bus.busstop_update_date=None
+      bus.from_busstop=None
+      bus.to_busstop=None
+      bus.stopnum=None
+      bus.comment = "bus route assigned"
+      bus.put()
+
+  def set_bus_on_stop(self, bus, stop_id):
+      """ sets bus data to match current stop_id """
+      bus.status="On Route"
+      bus.bus_stop=stop_id
+      bus.update_date=self.now()
+      bus.busstop_update_date=self.now()
+      bus.from_busstop=None
+      bus.to_busstop=None
+      bus.comment = "bus stop assigned"
+      bus.stopnum=stop_id+0.0
+      bus.put()
+
+  def set_bus_between_stops(self, bus, oldstop_id, newstop_id):
+      """ sets bus data as between two stops """
+      bus.status="On Route"
+      bus.bus_stop=None
+      bus.update_date=self.now()
+      bus.busstop_update_date=self.now()
+      bus.from_busstop=oldstop_id
+      bus.to_busstop=newstop_id
+      bus.comment = "bus is between stops"
+      bus.stopnum=oldstop_id+0.5
+      bus.put()
+
+  def is_in_boundary(self, bus):
+    """ Check if bus is in DC Circulator boundary """
+    b=self.get_boundary()  
+    if (b.lon_min<=bus.longitude) and (bus.longitude<=b.lon_max) and (b.lat_min<=bus.latitude) and (bus.latitude<=b.lat_max):
+      return True
+    else:
+      return False
+
+  def now(self):
+      """ return current time minus shift"""
+      d2 = timedelta(hours=4)
+      return datetime.utcnow()-d2
+
+  def is_expired(self, bus):
+      """ Check if bus info is expired """      
+      try:
+          d = timedelta(minutes=5)
+          d2 = timedelta(hours=4)
+          last5min = datetime.utcnow()-d-d2
+          if (bus.gps_date<last5min):
+              return True
+          else:
+              return False
+      except:
+          return False
+      
+  def no_passengers(self, bus):
+      """ set bus info as "no passengers" """      
+      d2 = timedelta(hours=4)
+      now = datetime.utcnow()-d2 
+      
+      bus.status="No Passengers"
+      bus.update_date=self.now()
+      bus.route_color=None
+      bus.on_route=None
+
+      bus.checkpoint_id=None
+      
+      bus.bus_stop=None
+      bus.busstop_update_date=self.now()
+      bus.from_busstop=None
+      bus.to_busstop=None
+      
+      bus.comment="no passengers"
+
+  def get_stops_by_route(self, route_id):
+    """ returns list of stops for route_id"""  
+    data = memcache.get("stops_for_route_"+str(route_id))
+    if data is not None:
+      return data
+    else:
+      data = models.Stop.all().filter("route_id =", route_id)
+      memcache.add("stops_for_route_"+str(route_id), data)
+      return data
+
+  def get_checkpoints(self):
+    """ returns list of checkpoints"""  
+    data = memcache.get("checkpoints2")
+    if data is not None:
+      return data
+    else:
+      data = models.Checkpoint.all()
+      memcache.add("checkpoints2", data)
+      return data
+        
+  def get_boundary(self):
+    """returns DC Circulator buffer/boundary"""  
+    data = memcache.get("boundary")
+    if data is not None:
+      return data
+    else:
+      data = models.Buffer.all().filter("route =", "circulator").get()
+      memcache.add("boundary", data)
+      return data
+
+  def get_boundaries(self):
+    """returns list of buffers/boundaries for routes of all colors"""  
+    data = memcache.get("routes_boundaries")
+    if data is not None:
+      return data
+    else:
+      data = models.Buffer.all().filter("route !=", "circulator")
+      memcache.add("routes_boundaries", data)
+      return data
+
+
+  nauticalMilePerLat = 60.00721
+  nauticalMilePerLongitude = 60.10793
+  rad = math.pi / 180.0
+  milesPerNauticalMile = 1.15077945
+    
+  def distance(self, lat1, lon1, lat2, lon2):                      
+    """
+    Caclulate distance between two lat lons in NM
+    """
+    yDistance = (lat2 - lat1) * self.nauticalMilePerLat
+    xDistance = (math.cos(lat1 * self.rad) + math.cos(lat2 * self.rad)) * (lon2 - lon1) * (self.nauticalMilePerLongitude / 2)
+
+    distance = math.sqrt( yDistance**2 + xDistance**2 )
+
+    return distance * self.milesPerNauticalMile
+
+    """
+    =SQRT(
+    ((F165-F164)*60.00721)^2
+    
+    +(
+        (
+        COS(F165*PI()*180)+
+        COS(F164*PI()*180)
+        )*(E164-E165)*60.10793/2
+    )^2
+    
+    )
+    
+    *1.15077945
+    """
+    
+  def box(self, lat, lon, radius ):
+    """
+    Returns two lat/lon pairs as (lat1, lon2, lat2, lon2) which define a box that exactly surrounds
+    a circle of radius of the given amount in miles.
+    """
+    latRange = radius / ( self.milesPerNauticalMile * 60.0 )
+    lonRange = radius / ( math.cos(lat * self.rad) * self.milesPerNauticalMile * 60.0)
+    
+    return ( lat - latRange, lon - lonRange, lat + latRange, lon + lonRange )
+    
+  def box_old (self, lat, lon, radius):
+    """ Old box calculations """
+    longitude = lon
+    latitude = lat
+    #radius = 0.06 #in miles - 0.02 mile = ~32 meters
+        
+    lng_min = longitude - radius / abs(math.cos(math.radians(latitude)) * 69)
+    lng_max = longitude + radius / abs(math.cos(math.radians(latitude)) * 69)
+    lat_min = latitude - (radius / 69)
+    lat_max = latitude + (radius / 69)
+    
+    return ( lat_min, lng_min, lat_max, lng_max)
+
+application = webapp.WSGIApplication(
+                                     [('/tasks/busupdate', BusUpdate)],
+                                     debug=True)
+
+def main():
+  run_wsgi_app(application)
+
+if __name__ == "__main__":
+  main()

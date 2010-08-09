@@ -1,16 +1,48 @@
-application: dc-sandbox
-version: 1beta
+application: dc-circ
+version: 3
 runtime: python
 api_version: 1
 
 handlers:
-
 - url: /favicon.ico
   static_files: static/img/favicon.ico
   upload: static/img/favicon.ico
 
+- url: /dash
+  script: /dash/dash.py
+
+- url: /api/circulator.kml
+  script: api/kml.py
+
+- url: /api/nextBus.json
+  script: api/nextBusJSON.py
+
 - url: /static
   static_dir: static
 
+- url: /remote_api
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
+
+- url: /tasks/push
+  script: tasks/push.py
+
+- url: /tasks/delete_datastore
+  script: tasks/delete_datastore.py
+  login: admin
+  
+- url: /iphone
+  script: iphone/iphone.py
+
+- url: /iphone/support
+  script: iphone/support.py
+
+- url: /iphone/.*
+  script: iphone/iphone.py
+  
+- url: /bus/.*
+  script: qr.py
+
 - url: /.*
   script: main.py
+

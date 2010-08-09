@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+	<Document>
+		<Style id="zh">
+			<IconStyle>
+				<color>FFFFFFFF</color>
+				<scale>1.0</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/pal3/icon63.png
+					</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>FFFFFFFF</color>
+				<width>5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>FFFFFFFF</color>
+			</PolyStyle>
+		</Style>
+		<Style id="zn">
+			<IconStyle>
+				<color>FFFFFFFF</color>
+				<scale>1.0</scale>
+				<Icon>
+					<href>http://www.zonums.com/library/symbols/ge/shp2kml.png
+					</href>
+				</Icon>
+			</IconStyle>
+			<BalloonStyle>
+				<text>$[description]</text>
+				<color>FFFFFFFF</color>
+			</BalloonStyle>
+			<LineStyle>
+				<color>FFFFFFFF</color>
+				<width>5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>FFFFFFFF</color>
+			</PolyStyle>
+		</Style>
+		<StyleMap id="MapRollOver">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#zn</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#zh</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Folder>
+			<name>Green</name>
+			<open>0</open>
+			<visibility>1</visibility>
+			<Placemark>
+				<name>1</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">1</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">409.097336526</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0326410883,38.9288066238,0
+						-77.0328615848,38.9287909598,0 -77.0333473669,38.9287613935,0
+						-77.0346378184,38.9286839693,0 -77.0360665520,38.9286733208,0
+						-77.0373505968,38.9287333100,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>2</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">2</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">187.79530157</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0373505968,38.9287333100,0
+						-77.0367074093,38.9271179133,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>3</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">3</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">77.2574141692</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0367074093,38.9271179133,0
+						-77.0372089249,38.9270041293,0 -77.0375701632,38.9269463506,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>4</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">4</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">91.5684160379</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0375701632,38.9269463506,0
+						-77.0369387595,38.9262851614,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>5</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">5</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">421.128017704</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0369387595,38.9262851614,0
+						-77.0350132375,38.9273262145,0 -77.0347096523,38.9273853723,0
+						-77.0325163497,38.9275383640,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>6</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">6</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">641.231368601</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0369387595,38.9262851614,0
+						-77.0370254289,38.9261868627,0 -77.0384023315,38.9253843626,0
+						-77.0401136749,38.9243709633,0 -77.0419988541,38.9231231195,0
+						-77.0426842446,38.9226607791,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>7</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">7</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">83.2831600216</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0426842446,38.9226607791,0
+						-77.0427606663,38.9228881088,0 -77.0429308472,38.9230746135,0
+						-77.0432354114,38.9232336407,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>8</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">8</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">355.909588294</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0432354114,38.9232336407,0
+						-77.0473396995,38.9232484003,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>9</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">9</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">263.08015135</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0473396995,38.9232484003,0
+						-77.0503604969,38.9234678498,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>10</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">10</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">96.795149161</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0503997358,38.9234706501,0
+						-77.0515134318,38.9235294963,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>11</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">11</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">163.454606213</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0515134318,38.9235294963,0
+						-77.0522937615,38.9248698524,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>12</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">12</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">162.842551582</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0522937615,38.9248698524,0
+						-77.0525170720,38.9246648283,0 -77.0525717964,38.9244519602,0
+						-77.0526062952,38.9240852449,0 -77.0525984352,38.9234723506,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>13</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">13</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">94.2999968569</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0525984352,38.9234723506,0
+						-77.0515134318,38.9235294963,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>14</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">14</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">141.202593601</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0326410883,38.9288066238,0
+						-77.0325163497,38.9275383640,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>15</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">15</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">2433.33016862</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0325163497,38.9275383640,0
+						-77.0323390286,38.9257417017,0 -77.0320104807,38.9224276315,0
+						-77.0318753213,38.9211051739,0 -77.0318400346,38.9206005199,0
+						-77.0318745899,38.9202941686,0 -77.0319406953,38.9200640465,0
+						-77.0319514867,38.9191848309,0 -77.0319515794,38.9140718404,0
+						-77.0319520286,38.9111287676,0 -77.0319513804,38.9069121629,0
+						-77.0319504495,38.9056452849,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>16</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">16</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">345.049900716</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0319503928,38.9056310904,0
+						-77.0319550908,38.9025227616,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>17</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">17</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">202.957859794</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0319628606,38.9013382310,0
+						-77.0296231339,38.9013257757,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>18</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">18</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">132.834640889</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0296231339,38.9013257757,0
+						-77.0296261291,38.9025223950,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>19</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">19</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">202.015997504</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0296261291,38.9025223950,0
+						-77.0319550908,38.9025227616,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>20</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">20</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Adams Morgan Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">82.5982930383</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0319628606,38.9013382310,0
+						-77.0319547534,38.9020822789,0 </coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Blue</name>
+			<open>0</open>
+			<visibility>1</visibility>
+			<Placemark>
+				<name>21</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">21</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">413.104676078</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0051678922,38.8963654986,0
+						-77.0053757030,38.8961447789,0 -77.0058545938,38.8959808042,0
+						-77.0062506563,38.8959026390,0 -77.0067317387,38.8959141783,0
+						-77.0071220652,38.8960281617,0 -77.0073937024,38.8962078140,0
+						-77.0076476410,38.8961104542,0 -77.0090833217,38.8950869153,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>22</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">22</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">367.325573201</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0090603721,38.8951034159,0
+						-77.0121709389,38.8928583332,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>23</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">23</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">85.6103250794</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0121709389,38.8928583332,0
+						-77.0121734587,38.8920871262,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>24</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">24</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">543.90409803</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0121734587,38.8920871262,0
+						-77.0059046555,38.8920123918,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>25</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">25</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">244.281997994</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0059046555,38.8920123918,0
+						-77.0059157694,38.8898118256,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>26</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">26</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">244.165308264</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0059157694,38.8898118256,0
+						-77.0058970300,38.8876123413,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>27</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">27</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">206.273678065</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0058970300,38.8876123413,0
+						-77.0035194807,38.8876136764,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>28</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">28</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">285.34720303</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0035194807,38.8876136764,0
+						-77.0032592569,38.8875487025,0 -77.0005772236,38.8864709640,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>29</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">29</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">549.057658317</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0005772236,38.8864709640,0
+						-76.9949660737,38.8841838637,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>30</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">30</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">852.800437899</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-76.9949669038,38.8841575063,0
+						-76.9949685215,38.8764751478,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>31</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">31</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">797.46281344</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-76.9949685215,38.8764751478,0
+						-77.0041587929,38.8764812525,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>32</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">32</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">324.331635687</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0041587929,38.8764812525,0
+						-77.0051776529,38.8792923212,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>33</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">33</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">60.3086263053</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0051776529,38.8792923212,0
+						-77.0058726005,38.8792830997,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>34</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">34</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">310.968833023</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0058726005,38.8792830997,0
+						-77.0058726163,38.8764817701,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>35</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">35</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Capitol Hill Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">148.71268662</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0058726163,38.8764817701,0
+						-77.0041587929,38.8764812525,0 </coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Purple</name>
+			<open>0</open>
+			<visibility>1</visibility>
+			<Placemark>
+				<name>36</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">36</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">National Mall Loop Extension</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">453.977783568</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0394809572,38.8920997359,0
+						-77.0394937498,38.8880101463,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>37</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">37</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">National Mall Loop Extension</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">513.675228715</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0394937498,38.8880101463,0
+						-77.0388525043,38.8879730230,0 -77.0374580555,38.8877129059,0
+						-77.0367253148,38.8877322841,0 -77.0359579898,38.8875462920,0
+						-77.0352934776,38.8875269908,0 -77.0344066412,38.8876652115,0
+						-77.0339700568,38.8877673539,0 -77.0336875759,38.8877730177,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>38</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">38</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">National Mall Loop Extension</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">486.569372624</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0336875759,38.8877730177,0
+						-77.0333108897,38.8877980809,0 -77.0328350786,38.8877581945,0
+						-77.0319148295,38.8875658224,0 -77.0281157247,38.8875662184,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>39</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">39</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">National Mall Loop Extension</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">999.821931602</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0281157247,38.8875662184,0
+						-77.0280377210,38.8875657388,0 -77.0165915965,38.8875632327,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>40</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">40</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">National Mall Loop Extension</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">927.921030281</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0165915965,38.8875632327,0
+						-77.0090642817,38.8875561316,0 -77.0058970300,38.8876123413,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>41</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">41</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">National Mall Loop Extension</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">488.440438725</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0058970300,38.8876123413,0
+						-77.0059046555,38.8920123918,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>42</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">42</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">National Mall Loop Extension</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">354.842009075</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0059046555,38.8920123918,0
+						-77.0082058865,38.8920324562,0 -77.0099937182,38.8920797660,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>43</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">43</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">National Mall Loop Extension</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">568.465788387</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0099188461,38.8920797723,0
+						-77.0135856895,38.8920836326,0 -77.0154994176,38.8920709704,0
+						-77.0159415558,38.8919860741,0 -77.0163879437,38.8917826708,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>44</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">44</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">National Mall Loop Extension</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">202.255334408</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0163879437,38.8917826708,0
+						-77.0185846153,38.8923930308,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>45</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">45</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">National Mall Loop Extension</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">656.385875366</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0185372262,38.8923798521,0
+						-77.0187186272,38.8922414248,0 -77.0190529075,38.8921086963,0
+						-77.0259904413,38.8920819371,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>46</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">46</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">National Mall Loop Extension</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">1170.35090064</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0259904413,38.8920819371,0
+						-77.0394809572,38.8920997359,0 </coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Yellow</name>
+			<open>0</open>
+			<visibility>1</visibility>
+			<Placemark>
+				<name>47</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">47</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Existing Union Station - Georgetown Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">1359.92324527</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0077783429,38.8968600590,0
+						-77.0081586798,38.8971069287,0 -77.0090643932,38.8974693260,0
+						-77.0111073665,38.8982997288,0 -77.0119048511,38.8986374660,0
+						-77.0124273680,38.8988566041,0 -77.0151548589,38.8998113038,0
+						-77.0158988106,38.9000716925,0 -77.0181836397,38.9008670683,0
+						-77.0193658537,38.9012787623,0 -77.0215421993,38.9020301908,0
+						-77.0219150199,38.9021013557,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>48</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">48</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Existing Union Station - Georgetown Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">3749.06431944</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0219150199,38.9021013557,0
+						-77.0239890988,38.9020888280,0 -77.0240158748,38.9025215718,0
+						-77.0280812181,38.9025178720,0 -77.0296261291,38.9025223950,0
+						-77.0336315904,38.9025181976,0 -77.0434599442,38.9025240685,0
+						-77.0466486849,38.9025259359,0 -77.0488255758,38.9025334332,0
+						-77.0494498581,38.9025334017,0 -77.0495064035,38.9023390390,0
+						-77.0496921031,38.9021019174,0 -77.0500834918,38.9019881938,0
+						-77.0505318864,38.9020961893,0 -77.0507480708,38.9023085559,0
+						-77.0507899277,38.9025259118,0 -77.0507226981,38.9027352075,0
+						-77.0533031076,38.9036361562,0 -77.0537183374,38.9037783379,0
+						-77.0547540166,38.9041269957,0 -77.0562013798,38.9046366050,0
+						-77.0570762228,38.9049494337,0 -77.0581092436,38.9052375596,0
+						-77.0591677090,38.9052186216,0 -77.0601160713,38.9052013179,0
+						-77.0628114736,38.9051766287,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>49</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">49</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Existing Union Station - Georgetown Circulator</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">1417.61928597</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0628114736,38.9051766287,0
+						-77.0628325410,38.9060003502,0 -77.0628726710,38.9064991627,0
+						-77.0630636380,38.9068777268,0 -77.0635815260,38.9078599538,0
+						-77.0640899811,38.9088222749,0 -77.0646209660,38.9098246415,0
+						-77.0651388577,38.9108059031,0 -77.0660235891,38.9124711409,0
+						-77.0666845535,38.9137271721,0 -77.0672044277,38.9146991281,0
+						-77.0677947636,38.9157613210,0 -77.0687520543,38.9169657165,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Red</name>
+			<open>0</open>
+			<visibility>1</visibility>
+			<Placemark>
+				<name>50</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">50</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Existing Convention Center - SW Waterfront</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">1631.79759168</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0239695331,38.9085739300,0
+						-77.0239692886,38.9041754832,0 -77.0240429996,38.9029284639,0
+						-77.0240177972,38.9025504092,0 -77.0239890988,38.9020888280,0
+						-77.0239769150,38.9008671114,0 -77.0239650010,38.8984465597,0
+						-77.0239666411,38.8974929246,0 -77.0239653857,38.8961327619,0
+						-77.0239751384,38.8938765711,0 </coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>51</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">51</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Existing Convention Center - SW Waterfront</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">3166.45723827</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0239751384,38.8938765711,0
+						-77.0218917951,38.8932878707,0 -77.0219079949,38.8905381585,0
+						-77.0219063573,38.8887376541,0 -77.0219058876,38.8812796030,0
+						-77.0219222338,38.8792952669,0 -77.0198936130,38.8792846159,0
+						-77.0198851115,38.8764614551,0 -77.0205252638,38.8766779854,0
+						-77.0211468164,38.8773060627,0 -77.0227281563,38.8786342050,0
+						-77.0248535104,38.8803136428,0 -77.0243120052,38.8809228429,0
+						-77.0241302877,38.8812918734,0 -77.0219058876,38.8812796030,0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>52</name>
+				<Snippet></Snippet>
+				<description><![CDATA[<table border=0 cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>OBJECTID</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">52</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>CIRCULATOR</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">Existing Convention Center - SW Waterfront</font></td></tr><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#000000"><b>SHAPE_LENG</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000">1853.28537542</font></td></tr></table>]]></description>
+				<styleUrl>#MapRollOver</styleUrl>
+				<LineString>
+					<tessellate>0</tessellate>
+					<extrude>0</extrude>
+					<altitudeMode>clampedToGround</altitudeMode>
+					<coordinates>-77.0237176359,38.9085738245,0
+						-77.0219138079,38.9085710004,0 -77.0219109814,38.9008701220,0
+						-77.0218818624,38.8932853589,0 </coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>

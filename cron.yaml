@@ -1,0 +1,4 @@
+cron:
+- description: constant bus updates
+  url: /tasks/update
+  schedule: every 1 minutes

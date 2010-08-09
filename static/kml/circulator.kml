@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<NetworkLink>
+  <name>Buses</name>
+  <Url>
+    <href>http://circulator.dc.gov/api/circulator.kml</href>
+    <refreshMode>onInterval</refreshMode>
+    <refreshInverval>15</refreshInverval>
+  </Url>
+</NetworkLink>
+<NetworkLink>
+  <name>Stops</name>
+  <Url>
+    <href>http://circulator.dc.gov/static/kml/stops.kml</href>
+  </Url>
+</NetworkLink>
+<NetworkLink>
+  <name>Routes</name>
+  <Url>
+    <href>http://circulator.dc.gov/static/kml/routes.kml</href>
+  </Url>
+</NetworkLink>
+</Document>
+</kml>

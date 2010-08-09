@@ -10,7 +10,7 @@
 	</b><br/>
 		
 {% for p in stop.predictions %}
-	<strong>x</strong>{{ p.direction.route.title }} {{ p.direction.title  }}  {{ p.seconds }}</a><br/>
+	<strong>x</strong>{{ p.direction.route.title }} {{ p.direction.title  }}  arriving in {% '%.0f' %(p.seconds/60) %} minutes</a><br/>
 {% endfor %}
 </p>
 
