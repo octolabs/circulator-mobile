@@ -24,6 +24,9 @@
 			{% ifequal p.direction.title d.title %}
 			<li>{{ p.minutes }} minutes</a></li>
 			{% endifequal %}
+			
+			{% empty %}
+		   		<li>Sorry, no predictions available at this time.</li>
 		{% endfor %}
 		</ul>
 		</p>

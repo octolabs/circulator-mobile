@@ -1,9 +1,16 @@
+import os
+os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
+
+from google.appengine.dist import use_library
+use_library('django', '1.1')
+
 import logging
 import wsgiref.handlers
 from google.appengine.ext import webapp
-import os
 from google.appengine.ext.webapp import template
 import _nextbus
+
+
 
 class MainHandler(webapp.RequestHandler):
 	def get(self):
