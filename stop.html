@@ -1,18 +1,37 @@
 {% extends "main.html" %}
 
-<h1>{% block title %} {{ title }} {% endblock %}</h1>
+{% block title %} Where is My Bus?<br/>for DC Circulator {% endblock %}
 
 {% block body %}
 <p>
-	<p>
 	<b>
-	stop.title here
-	</b><br/>
-		
-{% for p in stop.predictions %}
-	<strong>x</strong>{{ p.direction.route.title }} {{ p.direction.title  }}  arriving in {% '%.0f' %(p.seconds/60) %} minutes</a><br/>
-{% endfor %}
+	{{ stop.stop_title }}
+	</b>
 </p>
+
+{% for d in stop.directions %}
+	<p>
+		<b>
+			{{ d.route.title }}
+			<br/>
+			{{ d.title }}
+		</b>
+
+		<p>
+			Next vehicles in:
+		<ul>		
+		{% for p in stop.predictions %}
+			{% ifequal p.direction.title d.title %}
+			<li>{{ p.minutes }} minutes</a></li>
+			{% endifequal %}
+		{% endfor %}
+		</ul>
+		</p>
+
+
+	</p>	
+{% endfor %}
+
 
 {% endblock %}
 

@@ -1,4 +1,4 @@
-application: dc-circ
+application: dc-sandbox
 version: 3
 runtime: python
 api_version: 1

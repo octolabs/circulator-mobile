@@ -1,13 +1,20 @@
 {% extends "main.html" %}
 
-<h1>{% block title %} {{ title }} {% endblock %}</h1>
+{% block title %} Where is My Bus?<br/>for DC Circulator {% endblock %}
 
 {% block body %}
 
-	
+<p>
+Select your route/line:
+</p>
+
+<p>
+<ul>	
 {% for route in routes %}
-	<strong>x</strong> <a href="/whereismybus/route/{{ route.tag }}" accesskey="x">{{ route.title }}</a><br/>
+	<li> <a href="/whereismybus/route/{{ route.tag }}" accesskey="x">{{ route.title }}</a></li>
 {% endfor %}
+
+</ul>
 </p>
 
 {% endblock %}
