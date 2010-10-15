@@ -1,5 +1,5 @@
-application: dc-sandbox
-version: 3
+application: dc-circ
+version: 3-nextbus-challenge
 runtime: python
 api_version: 1
 
@@ -43,6 +43,8 @@ handlers:
 - url: /bus/.*
   script: qr.py
 
+- url: /challenge
+  script: challenge.py
+    
 - url: /.*
   script: main.py
-
